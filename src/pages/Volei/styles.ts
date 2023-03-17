@@ -2,26 +2,27 @@ import styled from 'styled-components';
 
 export const Container = styled.View`
   width: 100%;
-  height: 900px;
-  flex:1 ;
-  // background-color: #111;
-`
-
-export const areaView = styled.SafeAreaView`
-  width: 90%
+  height: 100%;
   flex: 1;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 `
 
 export const BlogContainer = styled.View`
   width: 90%;
-  height: 300px;
+  height: 156px;
   margin: 0 auto;
 `
+
+export const BlogWrapper = styled.View`
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+`
+
 export const blogImage = styled.Image`
   width: 100%;
+  height: 100px;
+  flex: 1;
+
   border-radius: 10px;
 `
 
@@ -43,49 +44,43 @@ export const blogDescription = styled.Text`
   margin-top: 10px;
 `
 
-export const blogInfosWrapper = styled.View`
-  width: 90%;
+export const blogInfosContainer = styled.View`
+  width: 100%;
+  height: 70px;
 
-  flex-direction: row;
-  
+  border: 1px solid black
 `
 
-export const Separetor = styled.View`
-  width: 100%;
-  height: 1px;
-  
-  background-color: #d1d1d1;
+export const blogInfosWrapper = styled.View`
+  width: 90%;
+  height: 100%
+  flex-direction: row;
 `
 
 export const blogFooter = styled.View`
-  width: 100%;
+  width: 90%;
   height: 100%
-  align-items: flex-start;
+  
   flex-direction: column;
 
 `
 export const blogFooterDate = styled.Text`
-  font-size: 10px;
-  color: #a1a1a1;
-
 `
 
 export const blogImageLogo = styled.Image`
-  margin-left: -13px;
+  width: 43px
+  height: 29px;
+
 `
 
 export const imageBlogGroup = styled.Image`
   width: 68px
   height: 46px;
-
-  border-radius: 10px;
 `
 
 export const blogFooterInfos = styled.View`
   width: 100%;
   flex-direction: row;
-  align-items: center;
-
 `
 
 

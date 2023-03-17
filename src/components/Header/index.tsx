@@ -1,11 +1,14 @@
 import React from "react";
-import { Text, View } from "react-native";
+
+
+import * as S from './styles';
+import Logo from '../../assets/logo.png';
 
 
 export default function Header () {
   return (
-    <View>
-      <Text>Header</Text>
-    </View>
+    <S.Container>
+      <S.Logo source={Logo}/>
+    </S.Container>
   )
 }
