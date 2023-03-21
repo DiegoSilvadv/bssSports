@@ -8,7 +8,7 @@ import * as S from './styles';
 import BlogImage from '../../assets/blogimage.png';
 import miniLogo from '../../assets/minilogo.png';
 
-export default function Volei() {
+export function Volei() {
   
   return (
     
