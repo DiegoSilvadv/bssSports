@@ -75,9 +75,8 @@ export const blogImageLogo = styled.Image`
 `
 
 export const imageBlogGroup = styled.Image`
-  width: 68px
+  width: 68px;
   height: 46px;
-
   border-radius: 10px;
 `
 

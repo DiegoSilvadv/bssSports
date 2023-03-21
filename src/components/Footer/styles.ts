@@ -1,30 +1,18 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
-export const Container = styled.View`
-  width: 100%;
-  flex: 1;
+export const TabArea = styled.View`
+  height: 70px;
+  background-color: #FFFFFF;
   flex-direction: row;
-
-  
-`
-
-export const logoContent = styled.View`
-  width: 80%;
-  height: 72px;
-
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+`;
+export const TabItem = styled.TouchableOpacity`
   flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin:0 auto;
-  background: #111
+`;
 
-`
-
-export const Text = styled.Text`
-color: #111`
-
-export const LogoFooter = styled.Image`
-  width: 41px;
-  height: 41px;
-`
+export const ImageIcon = styled.Image``

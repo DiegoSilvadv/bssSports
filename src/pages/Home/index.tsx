@@ -8,7 +8,7 @@ import * as S from './styles';
 import BlogImage from '../../assets/blogimage.png';
 import miniLogo from '../../assets/minilogo.png';
 
-export default function Home() {
+export function Home() {
 
   const [data, setData] = useState([{
     id: "Java basquete é campeão daTaça Curitiba.", description: "BSS Esportes há 3 horas", date: "BSS Esportes há 3 horas"
@@ -38,8 +38,6 @@ export default function Home() {
       <StatusBar hidden={true} />
 
       <Header />
-
-
       <S.BlogContainer>
         <S.LastNotices>Últimas notícias</S.LastNotices>
         <S.blogImage source={BlogImage} />
