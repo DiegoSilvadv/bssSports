@@ -1,8 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../pages/Home';
-import Volei from '../pages/Volei';
-import Teste from '../pages/Teste';
+import Statistics from '../components/Statistics';
 
 import { Image } from 'react-native';
 
@@ -41,7 +40,7 @@ export function AppRoutes() {
 
       <appStack.Screen
         name='teste'
-        component={Teste}
+        component={Statistics}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
             <Image
@@ -53,7 +52,7 @@ export function AppRoutes() {
         }}
       />
 
-      <appStack.Screen
+      {/* <appStack.Screen
         name='teste7'
         component={Volei}
         options={{
@@ -66,7 +65,7 @@ export function AppRoutes() {
           ),
 
         }}
-      />
+      /> */}
     </appStack.Navigator>
   )
 }

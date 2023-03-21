@@ -6,7 +6,6 @@ export const Container = styled.View`
   flex:1 ;
   // background-color: #111;
 `
-
 export const areaView = styled.SafeAreaView`
   width: 90%
   flex: 1;
@@ -14,7 +13,6 @@ export const areaView = styled.SafeAreaView`
   align-items: center;
   margin: 0 auto;
 `
-
 export const BlogContainer = styled.View`
   width: 90%;
   height: 300px;
@@ -24,7 +22,6 @@ export const blogImage = styled.Image`
   width: 100%;
   border-radius: 10px;
 `
-
 export const LastNotices = styled.Text`
   font-size: 16px;
   font-weight: bold;

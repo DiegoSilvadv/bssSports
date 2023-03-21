@@ -33,13 +33,10 @@ export default function Home() {
   },])
 
   return (
-
+    <SafeAreaView>
     <S.Container>
       <StatusBar hidden={true} />
-
       <Header />
-
-
       <S.BlogContainer>
         <S.LastNotices>Últimas notícias</S.LastNotices>
         <S.blogImage source={BlogImage} />
@@ -54,8 +51,8 @@ export default function Home() {
           renderItem={({ item }) => <ListItem data={item} />}
         />
       </S.areaView>
-
     </S.Container>
+    </SafeAreaView>
   )
 }
 
