@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const ModalPlacar = styled.View`  
   flex: 1;
-  backgroundColor: #FFF000;
+  backgroundColor: #FFF;
   borderRadius: 20px;
   padding: 10px;
   height: 65%;
