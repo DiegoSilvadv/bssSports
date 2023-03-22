@@ -1,12 +1,16 @@
-import { Text } from 'react-native'
+import { SafeAreaView, Text } from 'react-native'
 import Header from '../Header';
 import * as S from './styles';
 
 import Team1 from '../../assets/team1.png';
+import Local from '../../assets/local.png';
+import Time from '../../assets/time.png';
+import imgTST from '../../assets/imgtst.png';
 
 
 export default function Statistics() {
   return(
+    <SafeAreaView>
     <S.Container>
       <Header />
       <S.Scoreboard>
@@ -27,8 +31,56 @@ export default function Statistics() {
       <S.DetailsMatch>
         <S.DetailsTitle>Detalhes do jogo</S.DetailsTitle>
         <S.Separetor></S.Separetor>
+
+
+        <S.LeagueGroupDescription>
+          <S.IconDetailGroup>
+            <S.IconsDetails source={Local} />
+          </S.IconDetailGroup>
+            <S.DescriptionGroup>
+              <S.Title>Campeonato</S.Title>
+              <S.Description>Taça Curitiba</S.Description>
+            </S.DescriptionGroup>
+        </S.LeagueGroupDescription>
+        <S.Separetor></S.Separetor>
+
+        <S.LeagueGroupDescription>
+          <S.IconDetailGroup>
+            <S.IconsDetails source={Time} />
+          </S.IconDetailGroup>
+            <S.DescriptionGroup>
+              <S.Title>Campeonato</S.Title>
+              <S.Description>Taça Curitiba</S.Description>
+            </S.DescriptionGroup>
+        </S.LeagueGroupDescription>
+        <S.Separetor></S.Separetor>
+        <S.LeagueGroupDescription>
+          <S.IconDetailGroup>
+            <S.IconsDetails source={Local} />
+          </S.IconDetailGroup>
+            <S.DescriptionGroup>
+              <S.Title>Campeonato</S.Title>
+              <S.Description>Taça Curitiba</S.Description>
+            </S.DescriptionGroup>
+        </S.LeagueGroupDescription>
+        <S.Separetor></S.Separetor>
+
+        <S.LeagueGroupDescription>
+          <S.IconDetailGroup>
+            <S.IconsDetails source={imgTST} />
+          </S.IconDetailGroup>
+            <S.DescriptionGroup>
+              <S.Title>Campeonato</S.Title>
+              <S.Description>Taça Curitiba</S.Description>
+            </S.DescriptionGroup>
+        </S.LeagueGroupDescription>
       </S.DetailsMatch>
+
+        <S.ButtonMoreStatistics>
+          <S.ButtonMoreStatisticsText>Ver estatistica completa</S.ButtonMoreStatisticsText>
+        </S.ButtonMoreStatistics>
     </S.Container>
+    </SafeAreaView>
     
   )
 }

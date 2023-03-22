@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 import Statistics from '../components/Statistics';
 
 import { Image } from 'react-native';
+import Basquete from '../pages/Basquete';
 
 const appStack = createBottomTabNavigator();
 
@@ -19,14 +20,14 @@ export function AppRoutes() {
           borderTopWidth: 7,
           borderTopRightRadius: 30,
           borderTopLeftRadius: 30,
-          height: 72
+          height: 72,
         }
       }}
       
     >
       <appStack.Screen
         name='Home'
-        component={Home}
+        component={Basquete}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
             <Image
@@ -54,7 +55,7 @@ export function AppRoutes() {
 
       {/* <appStack.Screen
         name='teste7'
-        component={Volei}
+        component={}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
             <Image
@@ -70,3 +71,4 @@ export function AppRoutes() {
   )
 }
 
+ 

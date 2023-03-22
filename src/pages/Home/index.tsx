@@ -41,7 +41,7 @@ export default function Home() {
         <S.LastNotices>Últimas notícias</S.LastNotices>
         <S.blogImage source={BlogImage} />
         <S.blogTitle>Time de Curitiba vence partida com ampla vantagem mesmo com Herbert em quadra </S.blogTitle>
-        <S.blogDescription>Terça-feira (14) é dia de Champions League! Dois jogos agitam, logo mais, as oitavas de final da principal competição europeia. Manchester City (1) x (1) RB Leipzig FC Porto (0) x (1) Inter Acompanhe...</S.blogDescription>
+        <S.blogDescription>Te rça-feira (14) é dia de Champions League! Dois jogos agitam, logo mais, as oitavas de final da principal competição europeia. Manchester City (1) x (1) RB Leipzig FC Porto (0) x (1) Inter Acompanhe...</S.blogDescription>
       </S.BlogContainer>
       <S.areaView>
         <FlatList

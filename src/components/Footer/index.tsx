@@ -16,14 +16,13 @@ const Tab = createBottomTabNavigator();
 export default function Header() {
 
   return (
-    <S.Container>
-    
-      <S.logoContent>
-        <S.LogoFooter source={iconVoleiBol}/>
-        <S.LogoFooter source={iconHand}/>
-        <S.LogoFooter source={iconBasket}/>
-      </S.logoContent> 
-    </S.Container>
+    // <S.Container>
+    //   <S.logoContent>
+    //     <S.LogoFooter source={iconVoleiBol}/>
+    //     <S.LogoFooter source={iconHand}/>
+    //     <S.LogoFooter source={iconBasket}/>
+    //   </S.logoContent> 
+    // </S.Container>
     
 
   )

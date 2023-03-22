@@ -1,11 +1,9 @@
-import styled from 'styled-components/native';
+import styled from 'styled-components';
 
 export const Container = styled.View`
   width: 100%;
   flex: 1;
   flex-direction: row;
-
-  
 `
 
 export const logoContent = styled.View`
@@ -17,8 +15,6 @@ export const logoContent = styled.View`
   justify-content: space-between;
   align-items: center;
   margin:0 auto;
-  background: #111
-
 `
 
 export const Text = styled.Text`
@@ -27,4 +23,5 @@ color: #111`
 export const LogoFooter = styled.Image`
   width: 41px;
   height: 41px;
+  
 `
