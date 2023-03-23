@@ -1,4 +1,4 @@
-import { SafeAreaView, Text } from 'react-native'
+import { SafeAreaView, ScrollView, Text } from 'react-native'
 import Header from '../Header';
 import * as S from './styles';
 
@@ -6,11 +6,14 @@ import Team1 from '../../assets/team1.png';
 import Local from '../../assets/local.png';
 import Time from '../../assets/time.png';
 import imgTST from '../../assets/imgtst.png';
+import News from '../News';
+
 
 
 export default function Statistics() {
   return(
     <SafeAreaView>
+      <ScrollView>
     <S.Container>
       <Header />
       <S.Scoreboard>
@@ -79,7 +82,10 @@ export default function Statistics() {
         <S.ButtonMoreStatistics>
           <S.ButtonMoreStatisticsText>Ver estatistica completa</S.ButtonMoreStatisticsText>
         </S.ButtonMoreStatistics>
+        <News/>
+
     </S.Container>
+    </ScrollView>
     </SafeAreaView>
     
   )

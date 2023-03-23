@@ -8,31 +8,71 @@ import miniLogo from '../../assets/minilogo.png';
 
 import * as S from './styles';
 
+interface PostsProps {
+  title: string;
+  hour: string;
+  image: string;
+}
+
+interface IPosts {
+  posts: PostsProps[]
+}
+
 
 export default function News({data}){
 
-
+  const [dataPosts, setDataPosts] = useState([
+    {
+      title: "post 1",
+      hour: "3 horas atras",
+      image: "1213"
+    },
+    {
+      title: "post 2",
+      hour: "3 horas atras",
+      image: "1213"
+    },
+    {
+      title: "post 3",
+      hour: "3 horas atras",
+      image: "1213"
+    }
+  ])
 
     return (
         <SafeAreaView>
-        
           <S.BlogContainer>
             <S.LastNotices>Últimas notícias</S.LastNotices>
             <S.blogImage source={BlogImage} />
             <S.blogTitle>Time de Curitiba vence partida com ampla vantagem mesmo com Herbert em quadra </S.blogTitle>
-            <S.blogDescription>Te rça-feira (14) é dia de Champions League! Dois jogos agitam, logo mais, as oitavas de final da principal competição europeia. Manchester City (1) x (1) RB Leipzig FC Porto (0) x (1) Inter Acompanhe...</S.blogDescription>
+            <S.blogDescription>Terça-feira (14) é dia de Champions League! Dois jogos agitam, logo mais, as oitavas de final da principal competição europeia. Manchester City (1) x (1) RB Leipzig FC Porto (0) x (1) Inter Acompanhe...</S.blogDescription>
           </S.BlogContainer>
-          <S.areaView>
+          {/* <S.areaView> */}
             <FlatList
-              data={data}
+              data={dataPosts}
               contentContainerStyle={{ paddingBottom: 20 }}
-              keyExtractor={item => String(item.id)}
-              renderItem={({ item }) => <ListItem data={item} />}
+              keyExtractor={item => String(item.title)}
+              renderItem={({ item }) => <ListItem posts={item} />}
             />
-          </S.areaView>
-        
+          {/* </S.areaView> */}
         </SafeAreaView>
-      )
+      ) 
+}
+
+function ListItem({posts}: IPosts) { 
+   return (
+    <SafeAreaView>
+      <S.Separetor></S.Separetor>
+
+      <S.BlogWrapperFooter>
+        <S.BlogWrapperFooterTitle>{posts.title}</S.BlogWrapperFooterTitle>
+        <S.BlogWrapperFooterTitle>{posts.title}</S.BlogWrapperFooterTitle>
+      </S.BlogWrapperFooter>
+    </SafeAreaView>
+      
+
+    
+  );
 }
 
 

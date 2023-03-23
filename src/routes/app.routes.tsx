@@ -5,6 +5,7 @@ import Statistics from '../components/Statistics';
 
 import { Image } from 'react-native';
 import Basquete from '../pages/Basquete';
+import React from 'react';
 
 const appStack = createBottomTabNavigator();
 
@@ -20,7 +21,9 @@ export function AppRoutes() {
           borderTopWidth: 7,
           borderTopRightRadius: 30,
           borderTopLeftRadius: 30,
-          height: 72,
+          height: '10%',
+          justifyContent: 'center',
+          alignItems: 'center',
         }
       }}
       
