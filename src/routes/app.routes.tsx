@@ -5,6 +5,7 @@ import Statistics from '../components/Statistics';
 
 import { Image } from 'react-native';
 import Basquete from '../pages/Basquete';
+import Team from '../pages/Team';
 import React from 'react';
 
 const appStack = createBottomTabNavigator();
@@ -25,7 +26,7 @@ export function AppRoutes() {
           justifyContent: 'center',
           alignItems: 'center',
         }
-      }}
+      }} 
       
     >
       <appStack.Screen
@@ -39,6 +40,15 @@ export function AppRoutes() {
               }
             />
           ),
+        }}
+      />
+
+      <appStack.Screen 
+        name='team'
+        component={Team}
+        options={{ 
+          headerShown: false, 
+          tabBar: false
         }}
       />
 
@@ -56,9 +66,9 @@ export function AppRoutes() {
         }}
       />
 
-      {/* <appStack.Screen
+      <appStack.Screen
         name='teste7'
-        component={}
+        component={Statistics}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
             <Image
@@ -69,7 +79,7 @@ export function AppRoutes() {
           ),
 
         }}
-      /> */}
+      />
     </appStack.Navigator>
   )
 }

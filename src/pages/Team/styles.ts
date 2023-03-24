@@ -13,9 +13,6 @@ export const Scoreboard = styled.View`
   height: 213px;
   background-color: #383838;
 `
-export const ButtonImage = styled.TouchableOpacity`
-`
-
 export const ScoreboardTeams = styled.View`
   width: 100%;
   margin-top: -25%;

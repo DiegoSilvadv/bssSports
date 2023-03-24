@@ -19,8 +19,9 @@ export const Container = styled.View`
 // `
 export const BlogContainer = styled.View`
   width: ${wp(90)};
-  height: 300px;
+  /* height: 300px; */
   margin: 0 auto;
+  padding: 32px 0 8px 0; 
 `
 export const blogImage = styled.Image`
   width: ${wp(90)};
@@ -56,13 +57,46 @@ export const Separetor = styled.View`
 export const BlogWrapperFooter = styled.View`
   width: 100px;
   flex: 1;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+
 `
 
 export const BlogWrapperFooterTitle = styled.Text`
+  width: 180px;
   font-size: 12px;
-  color: #fff;
-  background-color: #111;
+  color: #000000;
+  font-weight: 700;
+`
+export const BlogFooterConatainer = styled.View`
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+
+  flex-direction: row;
+  padding: 9px 0 9px 0;
+`
+
+export const BlogWrapperFooterInfos = styled.View`
+  width: ${(100)}%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+`
+
+export const ImageFooterPost = styled.Image`
+  margin-left: -5%;
+`
+
+export const PostFooterTitle = styled.Text`
+  color: #a1a1a1;
+  font-size: 10px;
+`
+
+export const ImagePost = styled.Image`
+  width: ${(68)}px;
+  height: ${(46)}px;
+  border-radius: 10px;
 `
 
