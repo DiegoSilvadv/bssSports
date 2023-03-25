@@ -1,4 +1,4 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../pages/Home';
 import Statistics from '../components/Statistics';
@@ -9,6 +9,7 @@ import Team from '../pages/Team';
 import React from 'react';
 
 const appStack = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 export function AppRoutes() {
 
@@ -43,18 +44,9 @@ export function AppRoutes() {
         }}
       />
 
-      <appStack.Screen 
-        name='team'
-        component={Team}
-        options={{ 
-          headerShown: false, 
-          tabBar: false
-        }}
-      />
-
       <appStack.Screen
-        name='teste'
-        component={Statistics}
+        name='Statistic'
+        component={StatisticsTeam}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
             <Image
@@ -66,9 +58,9 @@ export function AppRoutes() {
         }}
       />
 
-      <appStack.Screen
-        name='teste7'
-        component={Statistics}
+      {/* <appStack.Screen
+        name='Team'
+        component={Tabs}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
             <Image
@@ -79,9 +71,29 @@ export function AppRoutes() {
           ),
 
         }}
-      />
+      /> */}
     </appStack.Navigator>
   )
 }
+
+function StatisticsTeam() {
+
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Statistic"
+        component={Statistics}
+        options={{ headerShown: false  }}
+      />
+      <Stack.Screen
+        name="Team"
+        component={Team}
+        options={{ headerShown: false  }}
+      />
+    </Stack.Navigator>
+  )
+}
+
+
 
  

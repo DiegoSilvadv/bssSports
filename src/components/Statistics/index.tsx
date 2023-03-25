@@ -15,7 +15,7 @@ export default function Statistics() {
 
   const navigation = useNavigation();
   function GoToTeam() {
-    navigation.navigate('team', {})
+    navigation.navigate('Team', {})
   }
 
   return (

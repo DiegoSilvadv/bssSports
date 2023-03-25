@@ -14,39 +14,39 @@ export const Scoreboard = styled.View`
   background-color: #383838;
 `
 export const ScoreboardTeams = styled.View`
-  width: 100%;
-  margin-top: -25%;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -30px;
   flex: 1;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 0 58px 0 58px;
 `
 export const ScoreboardTeamsGroup = styled.View`
   flex: 1;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+`
+export const TeamInfo = styled.Text`
+  color: #9B9B9B;
+  font-size: 16px;
 `
 
 export const ScoreboardTeamsGroupIMG = styled.Image`
+  margin-right: 15px;
 `
 export const ScoreboardTeamsGroupTeam = styled.Text`
   color: #fff;
-  margin-top: 30px;
   text-align: center;
+  font-size: 20px;
 `
 
-export const Score = styled.Text`
-  color: #ffffff;
-  margin: 1%;
-  font-size: 24px;
-  font-weight: bold;
-`
+
 
 // detalhes do jogo
 export const DetailsMatch = styled.View`
   width: 90%;
-  height: ${(265)}px;
+  height: ${(470)}px;
   background-color: #f2f2f2;
   margin: -15% auto 0 auto;
   border-radius: 15px;
@@ -104,10 +104,10 @@ export const ButtonMoreStatistics = styled.TouchableOpacity`
   height: 29px;
   background-color: #FF9F00;
 
-  margin-top: 21px;
- justify-content: center;
- align-items: center;
- border-radius: 15px;
+  margin: 31px auto 20px auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
 `
 export const ButtonMoreStatisticsText = styled.Text`
   color: #fff;
